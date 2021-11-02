@@ -1,0 +1,14 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  name: onetimeaccesscodes.hobbyfarm.io
+spec:
+  group: hobbyfarm.io
+  version: v1
+  names:
+    kind: OneTimeAccessCode
+    plural: onetimeaccesscodes
+    singular: onetimeaccesscode
+    shortNames:
+    - otac
+  scope: Cluster
